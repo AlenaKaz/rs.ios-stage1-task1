@@ -12,7 +12,7 @@
     
     NSMutableArray *resultArray = [NSMutableArray arrayWithObject: [sadArray firstObject]];
     
-    for (int i = 1; i < sadArray.count - 1; i++) {
+    for (int i = 1; i < [sadArray count] - 1; i++) {
         
         if ([sadArray[i] intValue] <= [sadArray[i - 1] intValue] + [sadArray[i + 1] intValue])
         {
